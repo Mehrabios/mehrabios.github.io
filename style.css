@@ -8,6 +8,7 @@
 }
 body {
     margin: 0px;
+    width: 100%;
 }
 main , h1 , h2 , h3 , p , span , a , figcaption , figure {
     background-color: #ffffff;
@@ -59,4 +60,22 @@ a {
 a:hover , .id:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    main {
+        width: 95%;
+        margin: 10px auto;
+    }
+    h1 {
+        font-size: 2.3rem;
+        width: 100%;
+    }
+    p , span , a {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    main {
+        width: 90%;
+    }
 }
