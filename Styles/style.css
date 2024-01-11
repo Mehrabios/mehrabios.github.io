@@ -1,0 +1,234 @@
+@font-face {
+    font-family: DMSans;
+    src: url(../Fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+@keyframes translateElement {
+    from {
+        transform: translate(0px,-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px,0px);
+        opacity: 1;
+    }
+}
+* {
+    font-family: DMSans;
+    box-sizing: border-box;
+    cursor: default;
+}
+body {
+    margin: 0px;
+}
+header {
+    padding: 70px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.fade-circle {
+    position: absolute;
+    opacity: 0.6;
+    z-index: 0;
+}
+header .red-fade-circle {
+    top: 25%;
+    left: 20%;
+}
+header .blue-fade-circle {
+    top: 45%;
+    left: 70%;
+}
+header .second-blue-fade-circle {
+    top: 65%;
+    left: 10%;
+}
+header .second-red-fade-circle {
+    top: 3%;
+    left: 92%;
+}
+header .lightblue-fade-circle {
+    top: 74%;
+    left: 76%;
+}
+header .content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation-name: translateElement;
+    animation-duration: 1.1s;
+    z-index: 1;
+}
+.content .mehrabios-avatar {
+    width: 35%;
+}
+.content .mehrabios-avatar img {
+    width: 100%;
+    border-radius: 100%;
+}
+header .content .title h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 12px auto;
+}
+header .content .title h1 .name {
+    color: #fc391d;
+}
+header .content .title h1 .front-end {
+    color: #1a355e;
+    text-decoration: underline;
+}
+header .content .paragraph p {
+    font-size: 1.2rem;
+}
+header .content .skills-introduction .skill {
+    font-size: 2rem;
+}
+.badge {
+    color: #7ba2b8;
+    padding: 3px 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+.badge:hover {
+    color: #fc391d;
+}
+main {
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+main .red-fade-circle {
+    left: 8%;
+    top: 25%;
+}
+main .blue-fade-circle {
+    left: 82%;
+    top: 50%;
+    opacity: 0.4;
+}
+main .lightblue-fade-circle {
+    left: 45%;
+    top: 15%;
+}
+main .projects {
+    width: 85%;
+}
+main .projects .content .title h2 {
+    font-size: 2.5rem;
+}
+main .projects .content .works .project {
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+    padding: 0px 0px 25px;
+}
+main .projects .content .works .project .title h3 {
+    color: #fc391d;
+    font-size: 3rem;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+main .projects .content .works .project .project-links h4 {
+    color: #1a355e;
+    font-size: 2rem;
+    margin: 12px auto;
+}
+main .projects .content .works .project .project-links a {
+    color: #7ba2b8;
+    text-decoration: none;
+    cursor: pointer;
+}
+main .projects .content .works .project .project-links a:hover {
+    text-decoration: underline;
+}
+main .projects .content .works .project .description p {
+    color: #575757;
+}
+footer {
+    padding: 70px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+footer .content {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+footer .content .title h2 {
+    font-size: 3rem;
+    margin: 8px auto 85px;
+    border-bottom: 1px solid #fc391d;
+    color: #fc391d;
+}
+footer .content .social-media-link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: 0.5s;
+
+}
+footer .content .social-media-link a {
+    fill: #1a355e;
+    transition: 0.5s;
+}
+footer .content .social-media-link a:hover {
+    fill: #fc391d;
+}
+footer .content .copyright-text p {
+    margin: 55px auto;
+    font-weight: 300;
+}
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 25px 0px;
+    }
+    header .lightblue-fade-circle {
+        width: 32%;
+        top: 12%;
+        left: 12%;
+    }
+    header .second-blue-fade-circle {
+        top: 46%;
+    }
+    header .red-fade-circle {
+        left: 55%;
+        top: 2%;
+        width: 22%;
+    }
+    header .content {
+        width: 85%;
+        text-align: start;
+        align-items: start;
+        overflow-x: hidden;
+    }
+    header .content .title h1 {
+        font-size: 2.8rem;
+        text-align: start;
+    }
+    header .content .paragraph p {
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    header .content {
+        width: 75%;
+    }
+}
