@@ -229,8 +229,11 @@ footer .content .copyright-text p {
     }
 }
 @media only screen and (max-width: 1024px) {
+    header .content {
+        width: 85%;
+    }
     header .content .title h1 {
-        font-size: 3.4rem !important;
+        font-size: 4.5rem !important;
     }
     header .lightblue-fade-circle {
         width: 22%;
