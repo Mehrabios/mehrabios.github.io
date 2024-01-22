@@ -1,3 +1,6 @@
 [submodule "GuessTheNumber"]
 	path = GuessTheNumber
 	url = https://github.com/Mehrabios/GuessTheNumber.git
+[submodule "GitHub-Profile-Explorer"]
+	path = GitHub-Profile-Explorer
+	url = https://github.com/Mehrabios/GitHub-Profile-Explorer.git
